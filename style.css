@@ -86,6 +86,7 @@ body {
 .mynavbar {
   background-color: rgba(255, 255, 255, 0.3) !important;
   backdrop-filter: blur(4px);
+  padding: 0.5rem 1rem;
 }
 
 .mynavbar .offcanvas {
@@ -95,7 +96,7 @@ body {
 .mynavbar .navbar-brand,
 .mynavbar .offcanvas-title {
   font-family: "Sacramento", cursive;
-  font-size: 3.2rem;
+  font-size: 2rem;
   font-weight: bold;
 }
 
@@ -108,8 +109,8 @@ body {
   background-size: cover;
   min-height: 100vh;
   margin-top: -6rem;
-  padding-top: 15rem;
-  padding-bottom: 5rem;
+  padding-top: 5rem;
+  padding-bottom: 4rem;
 }
 
 .home h2,
@@ -230,8 +231,8 @@ body {
 .gallery,
 .rsvp,
 .gifts {
-  padding-top: 10rem;
-  padding-bottom: 8rem;
+  padding-top: 5rem;
+  padding-bottom: 4rem;
 }
 
 .story span,
@@ -419,12 +420,12 @@ footer li {
 }
 
 .audio-icon-wrapper {
-  width: 4rem;
-  height: 4rem;
-  font-size: 4rem;
+  width: 3rem;
+  height: 3rem;
+  font-size: 3rem;
   position: fixed;
-  bottom: 2.5rem;
-  right: 2rem;
+  bottom: 1.5rem;
+  right: 1.5rem;
   cursor: pointer;
   color: white;
   opacity: 0.5;
@@ -527,30 +528,56 @@ footer li {
 /* mobile phone */
 @media (max-width: 576px) {
   html {
-    font-size: 60%;
+    font-size: 55%;
+  }
+
+  .hero h1 {
+    font-size: 3.5rem;
+  }
+
+  .hero h4 {
+    font-size: 1.4rem;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+  }
+
+  .photo-wrapper img {
+    height: 350px;
+  }
+
+  .gallery-item {
+    padding-bottom: 100%;
+  }
+
+  .rsvp form {
+    padding: 0 1rem;
   }
 
   .simply-countdown > .simply-section {
-    padding: 45px;
-    margin: 3px;
+    padding: 30px;
+    margin: 2px;
+  }
+}
+
+/* Thêm breakpoint cho điện thoại nhỏ hơn */
+@media (max-width: 375px) {
+  html {
+    font-size: 50%;
   }
 
-  .timeline li .timeline-image {
-    width: 80px;
-    height: 80px;
+  .hero h1 {
+    font-size: 3rem;
   }
 
-  .timeline li .timeline-panel {
-    width: 65%;
-    transform: translateX(-20px);
+  .photo-wrapper img {
+    height: 300px;
   }
 
-  .timeline li .timeline-panel::before {
-    top: 30px;
-  }
-
-  .timeline li .timeline-panel::after {
-    top: 31px;
+  .simply-countdown > .simply-section {
+    padding: 25px;
+    margin: 1px;
   }
 }
 
@@ -643,7 +670,7 @@ footer li {
 
 .photo-wrapper img {
   width: 100%;
-  height: 500px;
+  height: 350px;
   object-fit: cover;
   border-radius: 10px;
   transition: transform 0.3s ease;
@@ -692,7 +719,7 @@ footer li {
 .gallery-item {
   position: relative;
   width: 100%;
-  padding-bottom: 125%;
+  padding-bottom: 100%;
   overflow: hidden;
   border-radius: 10px;
   margin: 10px;
@@ -754,4 +781,16 @@ footer li {
     opacity: 0.9;
     transform: translateY(0);
   }
+}
+
+/* Tối ưu hiển thị ảnh */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Điều chỉnh container */
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
 }
