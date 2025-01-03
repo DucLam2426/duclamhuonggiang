@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Đức Lâm & Hương Giang</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Work+Sans:wght@100;300;400;600;700&display=swap" rel="stylesheet" />
+
+    <!-- simplyCountdown -->
+    <link rel="stylesheet" href="countdown/simplyCountdown.theme.default.css" />
+    <script src="countdown/simplyCountdown.min.js"></script>
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <section id="hero" class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white">
+      <main>
+        <h4>Kính gửi <span>Quý ông/bà, </span></h4>
+        <h1>Đức Lâm & Hương Giang</h1>
+        <p>Trân trọng kính mời quý vị đến dự lễ thành hôn vào ngày 09 Tháng 03, 2025</p>
+        <div class="simply-countdown"></div>
+        <a href="#home" class="btn btn-lg mt-4" onClick="enableScroll()">Xem thiệp mời</a>
+      </main>
+    </section>
+
+    <nav class="navbar navbar-expand-md bg-transparent sticky-top mynavbar">
+      <div class="container">
+        <a class="navbar-brand" href="#">Đức Lâm & Hương Giang</a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Đức Lâm & Hương Giang</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link" href="#home">Trang chủ</a>
+              <a class="nav-link" href="#info">Thông tin</a>
+              <a class="nav-link" href="#gallery">Ảnh cưới</a>
+              <a class="nav-link" href="#rsvp">Phản hồi</a>
+              <a class="nav-link" href="#gifts">Mừng cưới</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section id="home" class="home">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 text-center">
+            <div class="double-happiness">
+              <!-- <img src="img/double-happiness.png" alt="Double Happiness" class="hi-symbol"> -->
+            </div>
+            <h2>Lễ Thành Hôn</h2>
+            <h3>Hôn nhân là sự kết hợp thiêng liêng giữa hai trái tim, là khởi đầu của một hành trình hạnh phúc mới.</h3>
+            <p>Được sự đồng ý của hai bên gia đình, chúng tôi trân trọng kính mời quý vị đến dự buổi lễ thành hôn của chúng tôi.</p>
+          </div>
+        </div>
+
+        <div class="row couple">
+          <div class="col-lg-6">
+            <div class="couple-profile">
+              <div class="profile-photo">
+                <div class="photo-wrapper">
+                  <img src="img/imgChuRe.jpg" alt="Đức Lâm" class="img-fluid" />
+                  <!-- <span class="name-overlay">Đức Lâm</span> -->
+                </div>
+              </div>
+              <div class="profile-info text-center mt-4">
+                <h3>Đức Lâm</h3>
+                <p>
+                  Con trai của<br />
+                  Ông: Đỗ Thanh Tùng<br />
+                  và<br />
+                  Bà: Vũ Thị Nhung
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="couple-profile">
+              <div class="profile-photo">
+                <div class="photo-wrapper">
+                  <img src="img/imgCoDau.jpg" alt="Hương Giang" class="img-fluid" />
+                  <!-- 
+                  <span class="name-overlay">Hương Giang</span> -->
+                </div>
+              </div>
+              <div class="profile-info text-center mt-4">
+                <h3>Hương Giang</h3>
+                <p>
+                  Con gái của<br />
+                  Ông: Mai Xuân Đình<br />
+                  và<br />
+                  Bà: Lê Thị Linh
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="info" class="info">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-6 col-10 text-center mb-4">
+            <div class="card">
+              <div class="card-body">
+                <h3>Nhà Trai</h3>
+                <div class="mt-3">
+                  <i class="bi bi-calendar3 d-block"></i>
+                  <span>09 Tháng 03, 2025</span>
+                </div>
+                <div class="mt-2">
+                  <i class="bi bi-clock d-block"></i>
+                  <span>10:00 AM</span>
+                </div>
+                <p class="alamat mt-3">
+                  Tại:<br />
+                  Xóm 14 Xã Xuân Thượng<br />
+                  Huyện Xuân Trường, Tỉnh Nam Định
+                </p>
+                <iframe 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d931.8478770325092!2d106.33839325224144!3d20.340940952614374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjDCsDIwJzI3LjQiTiAxMDbCsDIwJzIwLjMiRQ!5e0!3m2!1svi!2s!4v1704799031099!5m2!1svi!2s"
+                  width="100%" 
+                  height="250" 
+                  style="border:0;" 
+                  allowfullscreen="" 
+                  loading="lazy">
+                </iframe>
+                <a href="https://www.google.com/maps/place/20%C2%B020'27.4%22N+106%C2%B020'20.4%22E/@20.340938,106.3383463,208m/data=!3m2!1e3!4b1!4m10!1m5!3m4!2zMjDCsDIwJzI3LjQiTiAxMDbCsDIwJzIwLjMiRQ!8m2!3d20.3409444!4d106.3389722!3m3!8m2!3d20.340938!4d106.33899?hl=vi-VN&entry=ttu&g_ep=EgoyMDI1MDEwMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="btn btn-light btn-sm mt-3">Xem bản đồ</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-10 text-center mb-4">
+            <div class="card">
+              <div class="card-body">
+                <h3>Nhà Gái</h3>
+                <div class="mt-3">
+                  <i class="bi bi-calendar3 d-block"></i>
+                  <span>09 Tháng 03, 2025</span>
+                </div>
+                <div class="mt-2">
+                  <i class="bi bi-clock d-block"></i>
+                  <span>10:00 AM</span>
+                </div>
+                <p class="alamat mt-3">
+                  Tại:<br />
+                  Xóm 15 Xã Xuân Kiên<br />
+                  Huyện Xuân Trường, Tỉnh Nam Định
+                </p>
+                <iframe 
+                  src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3742.4504191183145!2d106.32856597500275!3d20.26260097223616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjDCsDE1JzQ1LjQiTiAxMDbCsDE5JzUwLjciRQ!5e0!3m2!1svi!2s!4v1704799031099!5m2!1svi!2s"
+                  width="100%" 
+                  height="250" 
+                  style="border:0;" 
+                  allowfullscreen="" 
+                  loading="lazy">
+                </iframe>
+                <a href="https://www.google.com/maps/place/20%C2%B015'45.4%22N+106%C2%B019'50.7%22E/@20.262601,106.3301103,208m/data=!3m2!1e3!4b1!4m10!1m5!3m4!2zMjDCsDIwJzI3LjQiTiAxMDbCsDIwJzIwLjMiRQ!8m2!3d20.3409444!4d106.3389722!3m3!8m2!3d20.262601!4d106.330754?hl=vi-VN&entry=ttu&g_ep=EgoyMDI1MDEwMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="btn btn-light btn-sm mt-3">Xem bản đồ</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <span>Kỷ niệm</span>
+            <h2>Ảnh Cưới</h2>
+            <p>Chúng tôi rất vui mừng được chia sẻ những khoảnh khắc đáng nhớ trong cuộc sống của chúng tôi.</p>
+          </div>
+        </div>
+
+        <div class="row row-cols-lg-3 row-cols-md-3 row-cols-sm-2 row-cols-1 justify-content-center gallery-container">
+          <div class="col mt-3">
+            <div class="gallery-item">
+              <a href="img/gallery/imgCuoi.jpg" data-toggle="lightbox" data-caption="Đức Lâm & Hương Giang 1" data-gallery="mygallery">
+                <img src="img/gallery/thumbnail/imgCuoi.jpg" alt="Đức Lâm & Hương Giang 1" class="img-fluid" />
+              </a>
+            </div>
+          </div>
+          <div class="col mt-3">
+            <div class="gallery-item">
+              <a href="img/gallery/imgCuoi1.jpeg" data-toggle="lightbox" data-caption="Đức Lâm & Hương Giang 2" data-gallery="mygallery">
+                <img src="img/gallery/thumbnail/imgCuoi1.jpg" alt="Đức Lâm & Hương Giang 2" class="img-fluid" />
+              </a>
+            </div>
+          </div>
+          <div class="col mt-3">
+            <div class="gallery-item">
+              <a href="img/gallery/imgCuoi2.jpeg" data-toggle="lightbox" data-caption="Đức Lâm & Hương Giang 3" data-gallery="mygallery">
+                <img src="img/gallery/thumbnail/imgCuoi2.jpg" alt="Đức Lâm & Hương Giang 3" class="img-fluid" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="rsvp" class="rsvp">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <h2>Phản Hồi Tham Dự</h2>
+            <p>Vui lòng cho chúng tôi biết sự hiện diện của quý vị.</p>
+          </div>
+        </div>
+
+        <form class="row row-cols-md-auto g-3 align-items-center justify-content-center" method="POST" action="https://script.google.com/macros/s/AKfycbx4dQjU5BP4ai_zvzoKtLBeJagC9YZlDP1DUjnSWBAuCQZgyCiJvkJ9KLWHOmCC-Pg-/exec" id="my-form">
+          <div class="col-12">
+            <div class="mb-3">
+              <label for="nama" class="form-label">Họ tên</label>
+              <input type="text" class="form-control" id="nama" name="nama" />
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="mb-3">
+              <label for="jumlah" class="form-label">Số lượng</label>
+              <input type="number" class="form-control" id="jumlah" name="jumlah" min="1" max="5" length="1" value="1" />
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="mb-3">
+              <label for="status" class="form-label">Xác nhận</label>
+              <select name="status" id="status" class="form-select">
+                <option selected>Chọn phản hồi</option>
+                <option value="Hadir">Sẽ tham dự</option>
+                <option value="Tidak Hadir">Không thể tham dự</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-12" style="margin-top: 35px">
+            <button class="btn btn-primary">Kirim</button>
+          </div>
+        </form>
+
+        <div class="row justify-content-center mt-5">
+          <div class="col-md-8 text-center">
+            <div class="message-vietnamese">
+              <p>Tôi đã gặp được người mà khi ở bên cạnh, tôi có thể là chính mình nhất và cùng nhau mơ về tương lai.</p>
+              <p>Như một kỳ nghỉ hè đầy hứa hẹn, chúng tôi sẽ cùng nhau bắt đầu cuộc hành trình của cuộc đời.</p>
+              <p>Rất mong được đón tiếp quý vị tại điểm khởi đầu của hành trình này, sự hiện diện và lời chúc phúc của quý vị sẽ là niềm hạnh phúc lớn lao đối với chúng tôi.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gifts" class="gifts">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <span>Gửi lời chúc</span>
+            <h2>Mừng Cưới</h2>
+            <p>Sự hiện diện của quý vị là niềm vinh hạnh cho gia đình chúng tôi</p>
+          </div>
+        </div>
+
+        <div class="row justify-content-center text-center">
+          <div class="col-md-6">
+            <ul class="list-group">
+              <li class="list-group-item">
+                <div class="fw-bold">BSI</div>
+                9759825110 - Kalsum djali
+              </li>
+              <li class="list-group-item">
+                <div class="fw-bold">Kalsum Djali</div>
+                <img src="img/Kalsum Djali.jpeg" alt="Kalsum djali QR" class="img-thumbnail" width="150" />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <small class="block">&copy; 2024 - Đức Lâm & Hương Giang</small>
+            <small class="block">T.E by <a href="https://www.instagram.com/fikri_tukan/">@Fikri.</a></small>
+
+            <ul class="mt-3">
+              <li>
+                <a href="https://www.instagram.com/fikri_tukan/"><i class="bi bi-instagram"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="bi bi-tiktok"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div id="audio-container">
+      <audio id="song" autoplay loop>
+        <source src="audio/NgayDauTien-DucPhuc-7129810.mp3" type="audio/mp3" />
+      </audio>
+
+      <div class="audio-icon-wrapper" style="display: none">
+        <i class="bi bi-disc"></i>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
+
+    <script>
+      simplyCountdown(".simply-countdown", {
+        year: 2025, // năm 2025
+        month: 3,   // tháng 3
+        day: 9,     // ngày 9
+        hours: 11,  // giờ 11:00
+        words: {
+          days: { singular: "ngày", plural: "ngày" },
+          hours: { singular: "giờ", plural: "giờ" },
+          minutes: { singular: "phút", plural: "phút" },
+        },
+      });
+    </script>
+
+    <script>
+      const stickyTop = document.querySelector(".sticky-top");
+      const offcanvas = document.querySelector(".offcanvas");
+
+      offcanvas.addEventListener("show.bs.offcanvas", function () {
+        stickyTop.style.overflow = "visible";
+      });
+
+      offcanvas.addEventListener("hidden.bs.offcanvas", function () {
+        stickyTop.style.overflow = "hidden";
+      });
+    </script>
+
+    <script>
+      const rootElement = document.querySelector(":root");
+      const audioIconWrapper = document.querySelector(".audio-icon-wrapper");
+      const audioIcon = document.querySelector(".audio-icon-wrapper i");
+      const song = document.querySelector("#song");
+      let isPlaying = false;
+
+      function disableScroll() {
+        scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+
+        window.onscroll = function () {
+          window.scrollTo(scrollTop, scrollLeft);
+        };
+
+        rootElement.style.scrollBehavior = "auto";
+      }
+
+      function enableScroll() {
+        window.onscroll = function () {};
+        rootElement.style.scrollBehavior = "smooth";
+        // localStorage.setItem('opened', 'true');
+        playAudio();
+      }
+
+      function playAudio() {
+        song.volume = 0.1;
+        audioIconWrapper.style.display = "flex";
+        song.play();
+        isPlaying = true;
+      }
+
+      audioIconWrapper.onclick = function () {
+        if (isPlaying) {
+          song.pause();
+          audioIcon.classList.remove("bi-disc");
+          audioIcon.classList.add("bi-pause-circle");
+        } else {
+          song.play();
+          audioIcon.classList.add("bi-disc");
+          audioIcon.classList.remove("bi-pause-circle");
+        }
+
+        isPlaying = !isPlaying;
+      };
+
+      // if (!localStorage.getItem('opened')) {
+      //   disableScroll();
+      // }
+      disableScroll();
+    </script>
+    <script>
+      window.addEventListener("load", function () {
+        const form = document.getElementById("my-form");
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
+          const data = new FormData(form);
+          const action = e.target.action;
+          fetch(action, {
+            method: "POST",
+            body: data,
+          }).then(() => {
+            alert("Konfirmasi kehadiran berhasil terkirim!");
+          });
+        });
+      });
+    </script>
+    <script>
+      const urlParams = new URLSearchParams(window.location.search);
+      const nama = urlParams.get("n") || "";
+      const pronoun = urlParams.get("p") || "Quý ông/bà";
+      const namaContainer = document.querySelector(".hero h4 span");
+      namaContainer.innerText = `${pronoun} ${nama},`.replace(/ ,$/, ",");
+
+      document.querySelector("#nama").value = nama;
+    </script>
+  </body>
+</html>
